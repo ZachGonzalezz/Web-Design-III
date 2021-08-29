@@ -1,0 +1,46 @@
+<!--Zachary Gonzalez P5-->
+<!DOCTYPE html>
+<html>
+    <head> </head>
+
+    <body>
+        <p id="change">Cick Button</p>
+        <p id="current"></p>
+        <button onclick="changeElements()">Press Me</button>
+
+    
+        <script>
+         
+         
+
+         function changeElements(){
+        let text = document.getElementById("change");
+        text.style.fontSize = 14;
+        text.style.color = "blue";
+        document.getElementById("current").innerHTML = Date();
+         }
+        </script>
+<!--
+What's the point of using external JavaScript?
+
+So you can divide your visuals and logistic. Making it easier than if they were mixed into one file.
+
+Why might you want to use JavaScript to change the HTML? Why not just change the HTML itself?
+
+Javascript allows you to run your code in functions so when some user does an action you can change in JS code making it more interactive for the user
+
+What does JavaScript do that's needed even though we have HTML and CSS as tools?
+
+It allows for more interactivity. Html and css are good for laying out websites but if you want to add actual functionality thats where javascript comes into play.
+
+Why are variables (var) so important for JavaScript?
+
+They store values such Numbers Strings Arrays Dictionaries and allows data to be stored.
+
+What are JavaScript functions and why are they important?
+
+They allow you to call many lines of code under one name. They can have return statements which give you a calculated value
+ -->
+
+    </body>
+</html>

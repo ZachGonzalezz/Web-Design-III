@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head> </head>
+
+    <body>
+
+        <p id="hello"></p>
+        <p id="addNum"></p>
+        <p id="minToSeco"></p>
+        <p id="yearToDay"></p>
+        <p id="isMoreThanZero"></p>
+        <p id="firstEl"></p>
+
+
+
+        
+
+
+
+        <script>
+            function hello(){
+                return "Hello World";
+            }
+            document.getElementById("hello").innerHTML = hello();
+
+            function add(a, b){
+                return a  + b;
+            }
+            document.getElementById("addNum").innerHTML = add(6, 5);
+
+            function minutesToSeconds(minutes){
+                return minutes / 60;
+            }
+            document.getElementById("minToSeco").innerHTML = minutesToSeconds(5);
+
+            function yearToDay(years){
+                return years / 365;
+            }
+            document.getElementById("yearToDay").innerHTML = yearToDay(30);
+
+            function isGreaterThanZero(value) {
+                    if (value <= 0) {
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+            }
+            document.getElementById("isMoreThanZero").innerHTML = isGreaterThanZero(10);
+
+            function firstElement(array){
+                return array[0];
+            }
+
+            document.getElementById("firstEl").innerHTML = firstElement([1, 2, 3, 4]);
+
+        </script>
+
+    </body>
+</html>
