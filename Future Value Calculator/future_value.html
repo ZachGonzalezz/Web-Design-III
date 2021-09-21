@@ -1,0 +1,49 @@
+<!--Zachary Gonzalez Period 5-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Future Value Application</title>
+	<script>
+		var txt = '';
+		var numberOfYear = prompt('Enter a number of years');
+		var numberOfYearInt = parseInt(numberOfYear);
+		var rate = prompt('Enter interest rate');
+		rate = parseFloat(rate);
+		if (rate < 0 || rate > 15) {
+			prompt('Error enter valid interest rate');
+		}
+		investment = prompt('Enter first investment');
+		investment = parseFloat(investment);
+
+		if (isNaN(investment)) {
+			prompt('Error enter valid investment');
+		}
+			console.log(numberOfYearInt);
+			console.log(rate);
+			console.log(investment);
+			index = 1;
+			var oldValue = parseFloat(investment);
+		while(index <= numberOfYearInt) {
+			var interest = oldValue * (parseInt(rate) / 100);
+			txt += "Year = " + index;
+			txt += " Interest = " + interest;
+			txt += ' Value is = ' + (interest + parseFloat(investment)) + "<br>";
+			oldValue += interest;
+
+			index += 1;
+		}
+	</script>
+</head>
+
+<body>
+	<main>
+		<script>
+			document.write(txt);
+		</script>
+		Thanks for using the Future Value application.
+	</main>
+</body>
+
+</html>
