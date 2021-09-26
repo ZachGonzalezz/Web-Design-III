@@ -20,17 +20,17 @@
 		if (isNaN(investment)) {
 			prompt('Error enter valid investment');
 		}
-			console.log(numberOfYearInt);
-			console.log(rate);
-			console.log(investment);
+	
 			index = 1;
 			var oldValue = parseFloat(investment);
 		while(index <= numberOfYearInt) {
+			console.log(oldValue);
 			var interest = oldValue * (parseInt(rate) / 100);
 			txt += "Year = " + index;
 			txt += " Interest = " + interest;
-			txt += ' Value is = ' + (interest + parseFloat(investment)) + "<br>";
 			oldValue += interest;
+			txt += ' Value is = ' + (oldValue) + "<br>";
+			
 
 			index += 1;
 		}
